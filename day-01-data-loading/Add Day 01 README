@@ -1,0 +1,25 @@
+# Day 01: Loading Data with Pandas 📥
+
+## 📌 What I Learned Today
+- How to load CSV files using `pandas`
+- Using `read_csv()` to import datasets
+- Basic data exploration with:
+  - `head()` - view first 5 rows
+  - `info()` - get data types and non-null counts
+  - `shape` - check rows and columns
+
+## 💻 Code
+```python
+import pandas as pd
+
+# Load Titanic dataset
+df = pd.read_csv('https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv')
+
+# Explore the data
+print("First 5 rows:")
+print(df.head())
+
+print("\nDataset Info:")
+print(df.info())
+
+print("\nDataset Shape:", df.shape)
